@@ -1,0 +1,12 @@
+public class PlayingCat {
+/*This is a small program that determines whether the cat is engaged in playtime based on the temperature, 
+  which has to be between 25 and 35. Unless it's summer, then the upper limit is 45 instead of 35.*/
+    
+    public static boolean isCatPlaying (boolean summer, int temperature) {
+        
+        int max = (summer == true) ? 45 : 35;  //ternary assigns the value based on if it's summer or not
+        
+        return temperature >= 25 && temperature <= max; //this returns whether the cat should play or not
+        
+    } 
+}
